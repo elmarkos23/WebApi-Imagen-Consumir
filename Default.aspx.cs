@@ -30,6 +30,9 @@ namespace WebApi_Imagen_Consumir
                 // se instancia el objeto httpclient
                 var httpClient = new HttpClient();
                 //asignacion de la tura de la web api
+                //aqui se encuentra el ejemplo complementario para ejecutar el web api
+                //https://github.com/elmarkos23/WebApi-Imagen-Consumir
+
                 var uploadServiceBaseAddress = "http://localhost:49526/api/Imagen/Upload";
                 //envio a la web api el contenido (la imagen)
                 var httpResponseMessage = httpClient.PostAsync(uploadServiceBaseAddress, content);
